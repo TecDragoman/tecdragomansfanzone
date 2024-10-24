@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" 
+          content="IE=edge" />
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0" />
+        <title>Tec's Newsletter</title>
+        <style>
+        body {
+            padding: 25px;
+            background-color: #969292;
+            color: #0E0E0E;
+            font-size: 25px;
+        }
+
+        .dark-mode {
+            background-color: #00004d;
+            color: #806000;
+        }
+
+        .light-mode {
+            background-color: #969292;
+            color: #0E0E0E;
+        }
+    </style>
+    </head>
+    <body>
+        <form action="action_page.php">
+  <div class="container">
+    <h2>Subscribe to my Newsletter!</h2>
+    <p>With this option, you'll stay informed about whatever I'll do, about blogs, real life stuff,whatever...</p>
+    <h3>Info: This function is useless right now</h3>
+  </div>
+
+  <div class="container">
+    <input type="text" placeholder="Name" name="name" required>
+    <input type="text" placeholder="Email address" name="mail" required>
+  </div>
+
+  <div class="container">
+    <input type="submit" value="Subscribe">
+  </div>
+  <p>Thanks for subscribing, I'm looking forward to inform you!</p>
+  <p>Back to <a href="index.html">home</a></p>
+</form> 
+<h3 id="DarkModetext">Dark Mode</h3>
+    <button onclick="darkMode()">On</button>
+    <button onclick="lightMode()">Off</button>
+    <script>
+        function darkMode() {
+            let element = document.body;
+            let content = document.getElementById("DarkModetext");
+            element.className = "dark-mode";
+            content.innerText = "Dark Mode ON";
+        }
+        function lightMode() {
+            let element = document.body;
+            let content = document.getElementById("DarkModetext");
+            element.className = "light-mode";
+            content.innerText = "Dark Mode";
+        }
+    </script>
+    </body>
+</html>

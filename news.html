@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" 
+          content="IE=edge" />
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0" />
+        <title>Tec's Website News</title>
+        <style>
+        body {
+            padding: 25px;
+            background-color: #969292;
+            color: #0E0E0E;
+            font-size: 25px;
+        }
+
+        .dark-mode {
+            background-color: #00004d;
+            color: #806000;
+        }
+
+        .light-mode {
+            background-color: #969292;
+            color: #0E0E0E;
+        }
+    </style>
+    </head>
+    <body>
+        <h1>Welcome to the Website Update Site</h1>
+        <p>Here I'm telling you about the most recent updates of this page</p>
+        <div class="list">
+        <ul>
+            <li>24th October 2024: Setting up a navigation bar on the main page</li>
+        </ul>
+        </div>
+        <p>And here are the features that will get added soon:</p>
+        <div class="list">
+        <ul>
+            <li>Q&A Services</li>
+            <li>The Newsletter function</li>
+            <li>Personal Accounts, with signup and login functions</li>
+            <li>A social media section where I'm talking about the progresses on my social media platforms like Instagram or even chess.com</li>
+            <li>fixing Dark Mode issue</li>
+        </ul>
+        </div>
+  <p>Back to <a href="index.html">home</a></p>
+<h3 id="DarkModetext">Dark Mode</h3>
+    <button onclick="darkMode()">On</button>
+    <button onclick="lightMode()">Off</button>
+    <script>
+        function darkMode() {
+            let element = document.body;
+            let content = document.getElementById("DarkModetext");
+            element.className = "dark-mode";
+            content.innerText = "Dark Mode ON";
+        }
+        function lightMode() {
+            let element = document.body;
+            let content = document.getElementById("DarkModetext");
+            element.className = "light-mode";
+            content.innerText = "Dark Mode";
+        }
+    </script>
+    </body>
+</html>

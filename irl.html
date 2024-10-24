@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" 
+          content="IE=edge" />
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0" />
+        <title>Tec's Real Life</title>
+        <style>
+        body {
+            padding: 25px;
+            background-color: #969292;
+            color: #0E0E0E;
+            font-size: 25px;
+        }
+
+        .dark-mode {
+            background-color: #00004d;
+            color: #806000;
+        }
+
+        .light-mode {
+            background-color: #969292;
+            color: #0E0E0E;
+        }
+    </style>
+    </head>
+    <body>
+        <h1>Yo, welcome to the page where I'm talking about my real life!</h1>
+        <p>Here I'm keeping you updated about my real life happenings, so stay tuned!...</p>
+  <p>Back to <a href="index.html">home</a></p>
+<h3 id="DarkModetext">Dark Mode</h3>
+    <button onclick="darkMode()">On</button>
+    <button onclick="lightMode()">Off</button>
+    <script>
+        function darkMode() {
+            let element = document.body;
+            let content = document.getElementById("DarkModetext");
+            element.className = "dark-mode";
+            content.innerText = "Dark Mode ON";
+        }
+        function lightMode() {
+            let element = document.body;
+            let content = document.getElementById("DarkModetext");
+            element.className = "light-mode";
+            content.innerText = "Dark Mode";
+        }
+    </script>
+    </body>
+</html>
